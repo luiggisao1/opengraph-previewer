@@ -1,40 +1,31 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
   <defs>
-    <linearGradient id="bgGrad" x1="0" y1="0" x2="64" y2="64" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#0F172A" />
-      <stop offset="100%" stop-color="#020617" />
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#060913" />
     </linearGradient>
 
-    <linearGradient id="primaryGrad" x1="16" y1="14" x2="48" y2="50" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#38BDF8" />
-      <stop offset="50%" stop-color="#2563EB" />
-      <stop offset="100%" stop-color="#1D4ED8" />
+    <linearGradient id="primaryGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="35%" stop-color="#3b82f6" />
+      <stop offset="100%" stop-color="#1d4ed8" />
     </linearGradient>
 
-    <linearGradient id="dotGrad" x1="36" y1="16" x2="48" y2="28" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#67E8F9" />
-      <stop offset="100%" stop-color="#06B6D4" />
+    <linearGradient id="dotGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#67e8f9" />
+      <stop offset="100%" stop-color="#06b6d4" />
     </linearGradient>
   </defs>
 
-  <!-- Squircle Base with high-contrast perimeter highlight -->
+  <!-- Squircle Base with High-Contrast Slate Rim -->
   <rect x="2" y="2" width="60" height="60" rx="16" fill="url(#bgGrad)" stroke="#334155" stroke-width="1.75" />
 
-  <!-- D + L Architectural Monogram (duiggi.dev + Luiggi) -->
-  <!-- L-Spine & horizontal base -->
+  <!-- Monogram "L" with Smooth Curved Caps & Vertex -->
   <path
-    d="M 18 16 C 18 14.89 18.89 14 20 14 H 26 C 27.11 14 28 14.89 28 16 V 38 H 44 C 45.11 38 46 38.89 46 40 V 46 C 46 47.11 45.11 48 44 48 H 20 C 18.89 48 18 47.11 18 46 Z"
+    d="M 19 18.5 C 19 16 21 14 23.5 14 C 26 14 28 16 28 18.5 L 28 40 L 44.5 40 C 47 40 49 42 49 44.5 C 49 47 47 49 44.5 49 L 23.5 49 C 21 49 19 47 19 44.5 Z"
     fill="url(#primaryGrad)"
   />
 
-  <!-- The d-counter arc (geometric curve completing the 'd') -->
-  <path
-    d="M 28 24 C 36 24 46 27 46 36 C 46 42 41 46 36 46"
-    stroke="#38BDF8"
-    stroke-width="5"
-    stroke-linecap="round"
-  />
-
-  <!-- High-contrast cyan terminal pulse node -->
-  <circle cx="43" cy="20" r="3.5" fill="url(#dotGrad)" />
+  <!-- High-Contrast Cyan Terminal Pulse Node -->
+  <circle cx="44.5" cy="19.5" r="4" fill="url(#dotGrad)" />
 </svg>
